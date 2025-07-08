@@ -9,17 +9,12 @@
   "tags": ["transformation", "core", "engine", "zones", "threadshift"],
   "loading_order": 1,
   "dependencies": [],
-  "optional_dependencies": [
-    "threadshift-st-foundation"
-  ],
-  "js": "index.js",
+  "optional_dependencies": ["threadshift-st-foundation"],
+  "entry": "index.js",
   "auto_update": true,
   "minimum_st_version": "1.10.0",
   "api_version": "1.0.0",
-  "permissions": [
-    "character_cards",
-    "extension_settings"
-  ],
+  "permissions": ["character_cards", "extension_settings"],
   "settings": {
     "bidirectional_swaps": true,
     "auto_validation": true,
