@@ -1,0 +1,26 @@
+{
+  "zoneNumberToName": {
+    "001": "feet",
+    "002": "legs",
+    "003": "butt",
+    "004": "genitals",
+    "005": "waist",
+    "006": "chest",
+    "007": "neck",
+    "008": "face",
+    "009": "hair",
+    "010": "hands"
+  },
+  "zoneNameToNumber": {
+    "feet": "001",
+    "legs": "002",
+    "butt": "003",
+    "genitals": "004",
+    "waist": "005",
+    "chest": "006",
+    "neck": "007",
+    "face": "008",
+    "hair": "009",
+    "hands": "010"
+  }
+}

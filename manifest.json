@@ -1,0 +1,53 @@
+{
+  "manifest_version": 1,
+  "id": "threadshift-core-engine",
+  "display_name": "Threadshift Core Engine",
+  "version": "1.0.0",
+  "description": "Core engine for garment zone swapping, mapping, and validation. Provides the foundational swap logic, zone mapping system, and body map validation for the Threadshift ecosystem.",
+  "author": "Threadshift Team",
+  "homepage": "https://github.com/threadshift/threadshift-core-engine",
+  "tags": ["transformation", "core", "engine", "zones", "threadshift"],
+  "loading_order": 1,
+  "dependencies": [],
+  "optional_dependencies": [
+    "threadshift-st-foundation"
+  ],
+  "js": "index.js",
+  "auto_update": true,
+  "minimum_st_version": "1.10.0",
+  "api_version": "1.0.0",
+  "permissions": [
+    "character_cards",
+    "extension_settings"
+  ],
+  "settings": {
+    "bidirectional_swaps": true,
+    "auto_validation": true,
+    "history_limit": 100,
+    "enable_debug_logging": false,
+    "zone_validation": true,
+    "storage_namespace": "threadshift_core"
+  },
+  "events": [
+    "threadshift-swap-executed",
+    "threadshift-zone-swap",
+    "threadshift-core-ready",
+    "threadshift-swap-reversed"
+  ],
+  "api_endpoints": [
+    "swapEngine",
+    "mapper",
+    "validator",
+    "reciprocalHandler"
+  ],
+  "storage_keys": [
+    "threadshift_core_settings",
+    "threadshift_swap_history",
+    "threadshift_zone_mappings"
+  ],
+  "compatibility": {
+    "sillytavern_versions": [">=1.10.0"],
+    "node_versions": [">=16.0.0"],
+    "browser_support": ["chrome", "firefox", "safari", "edge"]
+  }
+}
